@@ -1,0 +1,102 @@
+	
+	#join_center {
+		width:600px;
+		margin: 0 auto;
+		background:black;
+		background-position: center;
+		height: 100%;
+		color: white;
+    }
+	
+    #join_title{
+    	padding:20px;
+    	font-weight:bold;
+    	text-align:center;
+    	color:#ffcc00;
+    	font-size: 2.5em;
+    	font-family: Times New Roman;
+    }
+    
+     #join_subtitle{
+    	padding:20px;
+    	font-weight:bold;
+    	text-align:center;
+    	color:#ffcc00;
+    	font-size: 1em;
+    	font-family: Times New Roman;
+    }
+    
+    #join_policy{
+    	padding:20px;
+    	color:#000000;
+    	font-size: 0.8em;
+    	font-family: Times New Roman;
+    }
+    
+    #join_bottom{
+    	text-align: center;
+    }
+    
+    #join_tableF{
+    	width:600px;
+		margin:0 auto;
+		border: 1px solid #DDD;
+		padding:10px;
+		background: #FFF;
+		color:#000000;
+		font-size:1em;
+    }
+    #joinF {
+    	padding-top:200px;
+		width:400px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 50px;
+    }
+    #hr{
+    	width:360px;
+		border-bottom: 1px solid #CCC;
+		margin-top: 10px;
+		margin-bottom: 10px;
+    }
+    .ta{
+    	width:260px;
+    	padding:5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-style: none;
+    }
+    .ta2{
+		margin-top: 5px;
+		padding-left:5px;
+		color:red;
+    }
+    .ta3{
+		color:blue;
+    }
+    .ta4{
+		width:240px;
+    	padding:5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-style: none;
+    }
+    .bt{
+		padding:5px;
+		text-align: right;
+    }
+    .bt2{ 
+		width:60px; 
+		padding:10px;
+		background:#FFCC00;
+		color:#000033;
+		letter-spacing:3px;
+		font-size: 0.9em;
+    }
+    .bt3{ 
+		width:200px; 
+		padding:10px;
+		background:#6e6464;
+		color:#FFF;
+		letter-spacing:5px;
+    }

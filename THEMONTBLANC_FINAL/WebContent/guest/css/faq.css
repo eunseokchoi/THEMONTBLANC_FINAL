@@ -1,0 +1,331 @@
+/* faq form */
+#roomF {
+	width: 740px;
+	margin-left: 30px;
+	padding-top: 30px;
+}
+
+#room_title2 {
+	font-weight: bold;
+	color: #6e6464;
+	font-size: 2em;
+	padding-bottom: 20px;
+}
+
+#faq_center {
+	padding-top: 110px;
+	margin: 0 auto;
+	width: 960px;
+}
+
+#faq_title {
+	background: #6e6464;
+	width: 960px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.faq_titleB {
+	margin-left: 50px;
+	float: left;
+	color: #FFF;
+}
+
+#wrap {
+	position: relative;
+}
+
+#faq_left {
+	background: #DDD;
+	position: absolute;
+	width: 150px;
+	line-height: 40px;
+	min-height: 100%;
+	font-weight: bold;
+}
+
+#faq_left>ul {
+	padding-top: 20px;
+}
+
+#faq_left>ul>li {
+	padding-left: 20px;
+}
+
+#faq_left>ul>li>a {
+	color: #808080;
+}
+
+#faq_left>ul>li>a:hover {
+	color: black;
+}
+
+#faq_section {
+	background: #FFF;
+	padding-left: 150px;
+	padding-bottom: 100px;
+	width: 810px;
+}
+
+/* faq innerform */
+#faqF {
+	padding: 20px;
+	width: 770px;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom: 500px;
+}
+
+#faqF a {
+	color: #6e6464;
+}
+
+#faqF a:hover {
+	color: #ff6600;
+}
+
+#faqF2 {
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+#faq_title2 {
+	font-weight: bold;
+	color: #6e6464;
+	font-size: 2em;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #CCC;
+}
+
+#faq_contents {
+	width: 710px;
+	margin: 0 auto;
+	background: #DDD;
+	font-size: 1em;
+	line-height: 25px;
+	padding: 20px;
+	border-top: 1px solid #6e6464;
+	border-bottom: 1px solid #6e6464;
+}
+
+#faq_page {
+	width: 710px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#faq_comment {
+	padding: 20px;
+	width: 710px;
+	margin: 0 auto;
+	color: #6e6464;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.faq_commentF {
+	width: 710px;
+	border-bottom: 1px dotted #AAA;
+}
+
+.comment1 {
+	width: 100px;
+}
+
+.comment2 {
+	width: 610px;
+	color: #AAA;
+}
+
+.comment3 {
+	vertical-align: middle;
+}
+
+.comment4 {
+	width: 710px;
+	padding-left: 100px;
+}
+
+#faq_page a {
+	color: #AAA;
+}
+
+#faq_bottom {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#faq_total {
+	font-weight: bold;
+	font-size: 0.9em;
+	margin-left: 10px;
+	color: #AAA;
+	padding: 5px;
+}
+
+.faqB {
+	width: 80px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #6e6464;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.faqS {
+	padding: 5px;
+	margin-right: 10px;
+	margin: 5px;
+}
+
+#faq_tableF {
+	width: 750px;
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: center;
+	border-bottom: 1px solid #6e6464;
+}
+
+#faq_tableF2 {
+	font-size: 0.8em;
+	color: #AAA;
+}
+
+.faq_tableB {
+	color: #FFF;
+	font-weight: bold;
+	background: #6e6464;
+	letter-spacing: 2px;
+}
+
+.faq_select {
+	color: #937750;
+}
+
+.bt {
+	padding: 5px;
+	margin: 3px;
+}
+
+.ta {
+	width: 100px;
+	padding: 5px;
+	margin: 3px;
+}
+
+.ta2 {
+	width: 200px;
+	padding: 5px;
+	margin: 3px;
+}
+
+/*************** add ********************/
+
+.guideBox, .faqList{
+	margin: 0;
+	padding: 0;
+	font:12px/160% dotum,'µ¸¿ò',serif;
+	color: #101010;
+}
+
+.ast {
+	color: red;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana;
+	vertical-align: middle;
+}
+
+.headTit {
+	position: relative;
+	z-index: 8;
+	height: 47px;
+	border-bottom: #432c10 solid 5px;
+	width: 740px;
+}
+
+.msgBox {
+	margin-bottom: 10px;
+	height: 41px;
+	line-height: 100px;
+	overflow: hidden;
+}
+
+.guideBox {
+	margin-bottom: 20px;
+}
+
+.hTit1 {
+	margin-bottom: 30px;
+}
+
+.hTit {
+	border-bottom: #a1886f solid 2px;
+	height: 30px;
+	line-height: 100px;
+	overflow: hidden;
+}
+
+.faqList {
+	border-top: #cdcbbe solid 1px;
+	margin-bottom:  20px;
+}
+
+.faqList icoA{
+	position: absolute;
+	left: 130px;
+	top:10px;
+	
+}
+.faqList>ul>li{
+	border-bottom: #cdcbbe solid 1px;
+	vertical-align: middle;
+	zoom: 1;
+	background: #ffffff;
+}
+
+.faqList>ul>li .fTit{
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+	cursor: pointer;
+	background: #faf9f4;
+}	
+
+.faqList>ul>li .fTit .tit{
+	float: left;
+	color: #707070;
+	padding: 10px 15px;
+	display: inline-block;
+	zoom: 1;
+}
+.faqList>ul>li .msg{
+	text-align: left;
+	margin: 0;
+	position: relative;
+	border-bottom: #ccc solid 1px;
+	border-top: #ccc solid 1px;
+	padding: 10px 25px 10px 30px;
+	background: #fff;
+	line-height: 160%;
+	color: #1b1b1b;	
+}
+
+.hTit2 {
+	border-bottom: #a1886f solid 2px;
+	height: 30px;
+	line-height: 100px;
+	overflow: hidden;
+}
+
+.msg1{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	height: 30px;
+	display: block;
+	line-height: 100px;
+	overflow: hidden;
+}

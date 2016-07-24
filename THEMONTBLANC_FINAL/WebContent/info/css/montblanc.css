@@ -1,0 +1,130 @@
+	
+	/* montblanc form */
+	#montblanc_center {
+        padding-top:110px;
+        margin:0 auto;
+        width:960px; 
+    }
+    #montblanc_title{
+    	background:#6e6464;
+    	width:960px; 
+    	height:100px;
+    	line-height:100px;
+    }
+    .montblanc_titleB {
+		margin-left:50px;
+        float:left;
+        color:#FFF;
+    }
+    #wrap {
+  		position: relative;
+  	}
+    #mjhotle_left{	
+        background:#DDD;
+  		position: absolute;
+  		width: 150px;
+        line-height:40px;
+  		min-height: 100%;
+  		font-weight: bold;
+    }
+    #mjhotle_left>ul{
+    	padding-top:20px;
+    }        
+    #mjhotle_left>ul>li{
+    	padding-left:20px; 
+    }
+    #mjhotle_left>ul>li>a{
+    	color:#808080;
+    }
+    #mjhotle_left>ul>li>a:hover{
+    	color:black;
+    }
+    #montblanc_section{
+    	background:#FFF;
+  		padding-left: 150px;
+  		padding-bottom: 100px;
+  		width: 810px;
+    }
+    
+    /* montblanc innerform */
+    #montblancF{
+        background-image:url(../images/about.jpg);
+		background-repeat:no-repeat;
+		height:230px;
+	   	width:770px;   	
+	   	padding:20px;
+	   	color:#FFF;
+	   	line-height:400px;
+		font-size:2em;
+	}
+	#montblancF2{
+		background:#d0bebc;
+		line-height:25px;
+	   	width:770px; 	
+	   	padding:20px;
+	}
+	#montblancF3{
+		line-height:25px;
+	   	width:770px; 	
+	   	padding:20px;
+	}
+	.montblancB{
+		font-weight: bold;
+		font-family: Arial;
+		color:black;
+		font-size:1.2em;
+	}
+	.montblancS{
+		font-size:0.8em;
+		line-height:25px;
+	}
+	
+	/* montblanc Findhotel */
+	#montblancF_tab{
+		padding:30px;
+	}
+	#montblancF_tab img{
+		float:left;
+		width:300px;
+		height:150px;
+		padding-right:20px;
+	}
+	#montblancF2_tab{
+		padding-top: 20px;
+		line-height: 30px;
+	}
+	.montblancB_tab{
+		font-weight: bold;
+		font-family: Arial;
+		color:black;
+		font-size:1em;
+	}
+	.montblancS_tab{
+		font-family: Arial;
+		color:#AAA;
+		font-size:0.8em;
+	}
+	#montblanc_table{
+		width: 770px;
+		margin: 0 auto;
+	}
+	#montblanc_table img{
+		width: 150px; 
+		height:225px;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	.montblanc_table_td{
+		width: 100px; 
+		text-align:center;
+		vertical-align: middle;
+	}
+	.montblanc_table_td2{
+		width: 300px; 
+		vertical-align: middle;
+	}
+	.cal{
+		font-weight: bold;
+		color:#242c41;
+		font-size: 1.3em;
+	}

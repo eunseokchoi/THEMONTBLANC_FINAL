@@ -1,0 +1,134 @@
+	
+	/* facilities form */
+	#fa_center {
+        padding-top:110px;
+        margin:0 auto;
+        width:960px; 
+    }
+    #fa_title{
+    	background:#6e6464;
+    	width:960px; 
+    	height:100px;
+    	line-height:100px;
+    }
+    .fa_titleB {
+		margin-left:50px;
+        float:left;
+        color:#FFF;
+    }
+    #wrap {
+  		position: relative;
+  	}
+    #fa_left{	
+        background:#DDD;
+  		position: absolute;
+  		width: 150px;
+        line-height:40px;
+  		min-height: 100%;
+  		font-weight: bold;
+    }
+    #fa_left>ul{
+    	padding-top:20px;
+    }        
+    #fa_left>ul>li{
+    	padding-left:20px; 
+    }
+    #fa_left>ul>li>a{
+    	color:#808080;
+    }
+    #fa_left>ul>li>a:hover{
+    	color:black;
+    }
+    #fa_section{
+    	background:#FFF;
+  		padding-left: 150px;
+  		padding-bottom: 100px;
+  		width: 810px;
+    }
+    
+    /* facilites innerform */
+    #faF{
+    padding:20px;
+	width:770px;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom:600px;
+	}
+	#faF2{
+	text-align: left;
+	padding-bottom:30px;
+	}
+	#faF3{
+	padding:20px;
+	width:770px;
+	line-height: 35px;
+	}
+	#fa_title2{
+	font-weight: bold;
+	color:#6e6464;
+	font-size:2em;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom: 1px solid #CCC;
+	}
+	#fa_title3{
+	font-weight: bold;
+	color:#6e6464;
+	font-size:1.5em;
+	padding-bottom:20px;
+	}
+    #tabs{
+	border:none;
+	font:bold 10pt HYµø≥ËB;
+	}
+	#tabs p{
+	line-height:25px;
+	font: 1.2em ±º∏≤;
+	}
+	#largeImg {
+		margin-top:10px;
+		width: 710px;
+		border: solid 5px #ccc;
+	}
+	#largeImg img{
+		width:710px;
+		height:450px;
+	}
+	.thumbs {
+		margin-top:20px;
+	}
+	.thumbs a{
+		margin-right: 20px;
+	}
+	.thumbs img {
+		border: solid 5px #ccc;
+		margin-top:3px;
+		margin-bottom:3px;
+		width:140px;
+		height:80px;
+	}
+	.thumbs img:hover {
+		border-color: #0099FF ;
+	}
+	.roomS{
+		line-height:25px;
+		padding:20px;
+	}
+	.roomB{
+		font-weight: bold;
+		color:#6e6464;
+		font-size:1.2em;
+	}
+	.li {
+	margin:0px 20px 20px 20px;
+	padding:10px;
+	background: lightgray;
+	line-height: 25px;
+	font-size: 0.8em;
+	}
+	.liS {
+	padding:10px;
+	background: lightgray;
+	line-height: 25px;
+	font-size: 1em;
+	}

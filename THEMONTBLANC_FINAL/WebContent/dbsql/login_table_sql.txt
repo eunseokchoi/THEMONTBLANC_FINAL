@@ -1,0 +1,185 @@
+// MEMBER PART ====================================================================================
+// Create Table ============================================
+	CREATE TABLE MB_LOGIN (
+		MEMBERNUM_SEQ	NUMBER,
+		ID				VARCHAR2(20) primary key,
+		PW				VARCHAR2(20) not null, 
+		GENDER			VARCHAR2(10) not null,
+   		ENGNAME			VARCHAR2(40) not null,
+		KORNAME			VARCHAR2(40),
+		BIRTHDAY		VARCHAR2(20) not null,
+		ADDR			VARCHAR2(300),
+		TEL				VARCHAR2(30) not null,
+		EMAIL			VARCHAR2(50)
+	);
+
+// Create Sequence =========================================
+	create sequence MEMBERNUM_SEQ increment by 1;
+
+// Insert Data =============================================
+	Insert into MB_LOGIN (MEMBERNUM_SEQ,ID,PW,GENDER,ENGNAME,KORNAME,BIRTHDAY,ADDR,TEL,EMAIL) values (MEMBERNUM_SEQ.nextval,'admin','1234','Mr.','admin','관리자','2016-07-01',' ','021231234','admin@themontblanc.com');
+	Insert into MB_LOGIN (MEMBERNUM_SEQ,ID,PW,GENDER,ENGNAME,KORNAME,BIRTHDAY,ADDR,TEL,EMAIL) values (MEMBERNUM_SEQ.nextval,'guest','1234','Mr.','guest','고객님','2016-07-01',' ','024567899','guest@themontblanc.com');
+
+
+// ROOM PART ================================================================================
+// Create Table ============================================
+	CREATE TABLE mb_room(
+		roomID number(5) primary key,
+		roomType varchar2(15),
+		roomCost number(8),
+		roomCap number,
+		roomThumb varchar2(15),
+		roomUse number(5),
+		roomInfo1 varchar2(2000),
+		roomInfo2 varchar2(2000),
+		roomInfo3 varchar2(2000)
+	);
+
+// Insert Data =============================================
+	insert into mb_room values(101, 'Standard', 100000, 2 , 'roomAthumb.jpg', 0, '스탠다드 룸은 편안하고 안락한 공간을 효율적으로 구성했습니다.', '저희 몽블랑 호텔에서 가장 저렴한 가격을 자랑하여 인기가 가장 높은 객실입니다.', '좋은 추억 만들어 가세요.' ) ;
+	insert into mb_room values(102, 'Standard', 100000, 2 , 'roomAthumb.jpg', 0, '스탠다드 룸은 편안하고 안락한 공간을 효율적으로 구성했습니다.', '저희 몽블랑 호텔에서 가장 저렴한 가격을 자랑하여 인기가 가장 높은 객실입니다.', '좋은 추억 만들어 가세요.' ) ;
+	insert into mb_room values(103, 'Standard', 100000, 2 , 'roomAthumb.jpg', 0, '스탠다드 룸은 편안하고 안락한 공간을 효율적으로 구성했습니다.', '저희 몽블랑 호텔에서 가장 저렴한 가격을 자랑하여 인기가 가장 높은 객실입니다.', '좋은 추억 만들어 가세요.' ) ;
+	insert into mb_room values(104, 'Standard', 100000, 2 , 'roomAthumb.jpg', 0, '스탠다드 룸은 편안하고 안락한 공간을 효율적으로 구성했습니다.', '저희 몽블랑 호텔에서 가장 저렴한 가격을 자랑하여 인기가 가장 높은 객실입니다.', '좋은 추억 만들어 가세요.' ) ;
+	insert into mb_room values(105, 'Standard', 100000, 2 , 'roomAthumb.jpg', 0, '스탠다드 룸은 편안하고 안락한 공간을 효율적으로 구성했습니다.', '저희 몽블랑 호텔에서 가장 저렴한 가격을 자랑하여 인기가 가장 높은 객실입니다.', '좋은 추억 만들어 가세요.' ) ;
+	insert into mb_room values(201, 'Deluxe', 200000, 6 , 'roomBthumb.jpg', 0, '여유로운 휴식 공간이 돋보이는 디럭스 룸에 서비스를 더한 객실입니다.', '글로벌 럭셔리 호텔 디자이너 피터 리미디오스가 디자인한 시대를 아우르는 모덤함을 만나보십시오.', '세계적인 수준의 침구류와 함께 생애 최고의 휴식을 경험해보시기 바랍니다.' ) ;
+	insert into mb_room values(202, 'Deluxe', 200000, 6 , 'roomBthumb.jpg', 0, '여유로운 휴식 공간이 돋보이는 디럭스 룸에 서비스를 더한 객실입니다. ', '글로벌 럭셔리 호텔 디자이너 피터 리미디오스가 디자인한 시대를 아우르는 모덤함을 만나보십시오.', '세계적인 수준의 침구류와 함께 생애 최고의 휴식을 경험해보시기 바랍니다.' ) ;
+	insert into mb_room values(203, 'Deluxe', 200000, 6 , 'roomBthumb.jpg', 0, '여유로운 휴식 공간이 돋보이는 디럭스 룸에 서비스를 더한 객실입니다. ', '글로벌 럭셔리 호텔 디자이너 피터 리미디오스가 디자인한 시대를 아우르는 모덤함을 만나보십시오.', '세계적인 수준의 침구류와 함께 생애 최고의 휴식을 경험해보시기 바랍니다.' ) ;
+	insert into mb_room values(204, 'Deluxe', 200000, 6 , 'roomBthumb.jpg', 0, '여유로운 휴식 공간이 돋보이는 디럭스 룸에 서비스를 더한 객실입니다. ', '글로벌 럭셔리 호텔 디자이너 피터 리미디오스가 디자인한 시대를 아우르는 모덤함을 만나보십시오.', '세계적인 수준의 침구류와 함께 생애 최고의 휴식을 경험해보시기 바랍니다.' ) ;
+	insert into mb_room values(205, 'Deluxe', 200000, 6 , 'roomBthumb.jpg', 0, '여유로운 휴식 공간이 돋보이는 디럭스 룸에 서비스를 더한 객실입니다. ', '글로벌 럭셔리 호텔 디자이너 피터 리미디오스가 디자인한 시대를 아우르는 모덤함을 만나보십시오.', '세계적인 수준의 침구류와 함께 생애 최고의 휴식을 경험해보시기 바랍니다.' ) ;
+	insert into mb_room values(301, 'Suite', 500000, 10 , 'roomCthumb.jpg', 0, '스위트룸은 영빈관이 내려다보이는 아늑하고 모던한 객실입니다.', '방예약시 세미나실과 탕비실을 무료로 이용하실 수 있습니다.', '조식부터 석식까지 제공되며 고객에 입맛에 따라 별도의 주문이 가능합니다. ' ) ;
+	insert into mb_room values(302, 'Suite', 500000, 10 , 'roomCthumb.jpg', 0, '스위트룸은 영빈관이 내려다보이는 아늑하고 모던한 객실입니다.', '방예약시 세미나실과 탕비실을 무료로 이용하실 수 있습니다.', '조식부터 석식까지 제공되며 고객에 입맛에 따라 별도의 주문이 가능합니다. ' ) ;
+	insert into mb_room values(303, 'Suite', 500000, 10 , 'roomCthumb.jpg', 0, '스위트룸은 영빈관이 내려다보이는 아늑하고 모던한 객실입니다.', '방예약시 세미나실과 탕비실을 무료로 이용하실 수 있습니다.', '조식부터 석식까지 제공되며 고객에 입맛에 따라 별도의 주문이 가능합니다. ' ) ;
+	insert into mb_room values(304, 'Suite', 500000, 10 , 'roomCthumb.jpg', 0, '스위트룸은 영빈관이 내려다보이는 아늑하고 모던한 객실입니다.', '방예약시 세미나실과 탕비실을 무료로 이용하실 수 있습니다.', '조식부터 석식까지 제공되며 고객에 입맛에 따라 별도의 주문이 가능합니다. ' ) ;
+	insert into mb_room values(305, 'Suite', 500000, 10 , 'roomCthumb.jpg', 0, '스위트룸은 영빈관이 내려다보이는 아늑하고 모던한 객실입니다.', '방예약시 세미나실과 탕비실을 무료로 이용하실 수 있습니다.', '조식부터 석식까지 제공되며 고객에 입맛에 따라 별도의 주문이 가능합니다. ' ) ;
+	
+
+// RESERVATION PART ================================================================================
+// Create Table ============================================
+	create table mb_reservation(
+		revID number(10) primary key,
+		revMember varchar2(30),
+		revRoomID number(10),
+		revCost number(8),
+		revCap number,
+		revIn date,
+		revOut date,
+		revTerm number,
+		revDate date
+	);
+
+	create table useroom(
+		useID number(10) primary key,
+		useMember varchar2(30),
+		useRoomID number(10),
+		useCap number(8),
+		useIn date,
+		useOut date,
+		useTerm number
+	);
+	
+// Create Sequence =========================================
+	create sequence revID  increment by 1  start with 1;
+	
+// NOTICE PART ====================================================================================
+// Create Table ============================================
+	create table mb_notice(
+		num number primary key, 			
+		title varchar2(100) not null,	 
+		contents varchar2(2000) not null,	
+		name varchar2(10) not null,  
+		sdate date not null,  		
+		hit number not null   
+	);
+	
+// Create Sequence =========================================	
+	create sequence mb_seq increment by 1 start with 1;
+	
+// Insert Data =============================================
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC OPEN!!!!','THE MONT BLANC은 최고의 서비스 및 최상위 품질을 제공합니다', 'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC 리뉴얼', '웹접근성 및 안정성, 브랜드기능을 강화한 몽블랑 호텔 홈페이지 리뉴얼 오픈 THE MONT BLANC이 새롭게 오픈되었습니다 웹접근성과 안정성을 전면적으로 개선하였으며 저희 브랜드이미지에 맞춰 레이아웃도 통일시켜 브랜딩기능을 강화했습니다앞으로도 저희 THE MONT BLANC은 고객님들께 보다 나은 서비스를 제공할 수 있도록 최선을 다하겠습니다', 'admin', sysdate, 0 );
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC CINEMA THE MONT BLANC CLUB 제휴혜택 종료안내', 'THE MONT BLANC CINEMA THE MONT BLANC CLUB 제휴혜택이 곧 종료됨을 안내해드립니다. THE MONT BLANC CINEMA THE MONT BLANC CLUB 제휴특전 중 THE MONT BLANC CINEMA THE MONT BLANC CLUB 영화 할인 이벤트 혜택은 제휴사의 사정으로 인해 2016년 7월 16일부터 종료됨을 알려드리오니 이용에 착오없으시길 부탁드립니다',  'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC에 디저트 팝업 스토어를 열다!', 'THE MONT BLANC에 디저트 팝업 스토어를 열게 되었습니다. THE MONT BLANC 식당 LANC, 베이쿼리 BELICA는 9월 5일까지 THE MONT BLANC DEPARTMENT STORE 지하2층 식품관에서 홍콩과 마카오의 유명디저트를 맛볼수 있으며, 마카오 유명 베이커리 로드 스토우스(Lord Stow s)의 에그 타르트(3,300원) 호두 타르트(4,700원) 을 현지의 맛 그대로 만날 수 있습니다', 'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, 'UCC 올리고 하와이 여행권 받자!', 'THE MONT BLANC DEAR CHAR BLANC UCC 공모전 개최 THE MONT BLANC은 오는 12월 17일까지 THE MONT BLANC DEAR CHAR BLANC UCC 공모전을 실시합니다. 참가를 원하는 사람은 호텔 담당자 메일(admin@montblanc.com)로 참가 신청을 하면 헌정곡 악보가 제공되며, 이를 자신의 스타일로 재해석하여 영상을 유튜브에 올린뒤 해당 링크를 THE MONT BLANC 담당자 메일로 다시 전공하면 응모가 완료됩니다. UCC공모전은 음반을 발매하지 않은 소속사가 없는 사람이라면 누구나 참여가능하며 개인 또는 팀 형태로 가능함', 'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC, 여름 프로모션 진행안내', 'THE MONT BLANC은 오는 8월 한달간 호주청정우를 활용한 프로모션을 진행합니다, 진행기간동안 호주의 깨끗한 자연에서 자라 까다로운 품질관리를 거친 "호주청정우" 를 활용해 드라이 에이징 통 로스트 비프와 소 갈비구이, 채끝살 그릴 구이를 선보입니다','admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC 개인정보 취급방침 변경안내', 'THE MONT BLANC 개인정보 취급방침 변경안내사항,홈페이지 리뉴얼을 새롭게하면서 개인정보 취급방침도 변경됨을 알려드립니다 자세한 공지는 추후에 본 게시판에서 확인할 수 있으며, 자세한 문의사항은 호텔 상담센터 및 REQUEST 게시판을 활용해주시면 감사하겠습니다', 'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC, 신관 16층 운영안내', 'THE MONT BLANC, 신관 16층 운영안내사항입니다 호텔시설점검을 위해서 신관 16층 운영을 당분간 중단하오니 본관을 이용해주시기 바랍니다. 불편을 끼쳐 대단히 죄송합니다, 많은 이해와 협조 부탁드립니다.', 'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, 'THE MONT BLANC 홈페이지 시스템 업그레이드안내', 'THE MONT BLANC 홈페이지 시스템 업그레이드안내 본 홈페이지 업그레이드를 위해서 접속이 잠시 중단됨을 알려드립니다. 접속 중단 시간 : 2016/07/31 (일) 00:00~03:00 (한국시간기준) 홈페이지 시스템 업그레이드로 접속이 잠시 중단됩니다. 다소 불편하시더라도 양해 부탁드리며 고객님께 더 나은 서비스를 제공하도록 노력하는 롯데호텔이 되겠습니다. 감사합니다', 'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, '2016년 8월 6일부터 외국인관광객 부가세 환급 시행 종료됨을 알려드립니다', '외국인관광객 부가세 환급 시행 종료 안내부분 2016년 8월 5일까지 숙박한 부분에 한하여 대상 적용시 환급이 가능합니다. 체크아웃 기준 3개월 이내에만 소급 가능 (단, 8월 06일 이후는 소급불가) 프런트에 체크아웃 영수증 제출시 환급 영수증 발행 (8월 06일 이후 발행 불가) 외국인관광객 부가세 환급 국내 6개월 이상 거주하지 않고 소득이 없는 외국인 투숙객 (단, 국내 주소를 둔 개인 및 사무소를 둔 국내외 법인 제외) 2박 이상 30박 이하 외국인 개인 및 그룹 (단, 투숙객 개인카드 직접 결제 시에 한함, 법인 카드 제외) 호텔에서 직접 결제한 객실료 부분에 한함 (호텔홈페이지를 제외한 인터넷 사이트 및 여행사를 통한 결제분 제외)' , 'admin', sysdate, 0);
+	insert into mb_notice values(mb_seq.nextval, '2016년 트래블러즈 초이스 호텔 어워드 3관왕 쾌거!', 'THE MONT BLANC 대한민국 베스트 호텔 1위 THE MONT BLANC 유럽 베스트 호텔 1위, THE MONT BLANC 북미 베스트 호텔 4위 트립어드바이저의 2015 트래블러즈 초이스(Tripadvisor 2015 Travelers’ Choice) 호텔 어워드에서 대한민국 1위호텔, 유럽 베스트 호텔 4위로 선정되었습니다 올해로 13회를 맞은 트래블러즈 초이스 어워드는 세계 최대 규모의 여행 사이트인 트립어드바이저가 전 세계 여행자로부터 한 해 동안 수집한 수많은 리뷰와 의견을 모아 베스트, 럭셔리, 로맨스 호텔 등의 카테고리에 따라 가장 우수한 시설과 서비스를 선정해 주는 상입니다. 여러분의 사랑과 관심 잊지않고 더욱 열심히 노력하여 고객 만족에 늘 최선을 다하겠습니다.앞으로도 많은 응원 부탁드립니다.', 'admin', sysdate, 0);
+
+
+// EVENT PART ======================================================================================
+// Create Table ============================================
+	create table mb_event(
+		num number primary key,
+		mbevent_main varchar2(50),
+		mbevent_thumb varchar2(50),
+		title varchar2(50) not null,
+		content varchar2(3000) not null,
+		e_start date,
+		e_end date,
+		time date,
+		hit number
+	);
+// Create Sequence =========================================
+	create sequence mb_event_num_seq increment by 1 start with 1;
+
+// Insert Data =============================================
+	insert into mb_event values(mb_event_num_seq.nextval, 'mbevent_main_01.jpg', 'mbevent_thumb_01.jpg', 'SUMMER BREEZE', ' 이미지를 참고해주세요. ', '16/07/15', '16/09/15', sysdate, 0);
+	insert into mb_event values(mb_event_num_seq.nextval, 'mbevent_main_02.jpg', 'mbevent_thumb_02.jpg', 'MY BABY 1st Birthday Party', ' 이미지를 참고해주세요. ', '16/07/01', '16/09/30', sysdate, 0);
+	insert into mb_event values(mb_event_num_seq.nextval, 'mbevent_main_03.jpg', 'mbevent_thumb_03.jpg', 'For Bridals 예비신부님을 위하여', ' 이미지를 참고해주세요. ', '16/04/07', '16/09/30', sysdate, 0);
+	insert into mb_event values(mb_event_num_seq.nextval, 'mbevent_main_04.jpg', 'mbevent_thumb_04.jpg', '[Culture Trip] 김광석을 보다', ' 이미지를 참고해주세요. ', '16/04/05', '16/05/13', sysdate, 0);
+	insert into mb_event values(mb_event_num_seq.nextval, 'mbevent_main_05.jpg', 'mbevent_thumb_05.jpg', 'HOTEL 몽블랑 + COEX AQUARIUM EVENT', ' 이미지를 참고해주세요. ', '15/08/01', '15/12/31', sysdate, 0);
+	insert into mb_event values(mb_event_num_seq.nextval, 'mbevent_main_06.jpg', 'mbevent_thumb_06.jpg', '식당가 프로모션', ' 이미지를 참고해주세요. ', '16/07/01', '16/08/31', sysdate, 0);
+
+// REQUEST PART ======================================================================================
+// Create Table ============================================
+	create table mb_request(
+		qno number primary key,
+		qselect varchar2(20),
+		qtitle varchar2(100),
+		qname varchar2(50),
+		qtel varchar2(20),
+		qemail varchar2(50),
+		qcontents varchar2(3000),
+		nalja date
+	);
+
+// Create Sequence ===============================
+	create sequence request_qno_seq increment by 1 start with 1;
+
+// Insert Data ===================================
+	insert into mb_request values(request_qno_seq.nextval, 'ACCOMODATION', '문의드립니다', '이균열', '010189807582', 'aaa@naver.com', 'aaa', sysdate); 
+	insert into mb_request values(request_qno_seq.nextval, 'FACILITIES', '문의드립니다', '송학수', '010189807582', 'aaa@naver.com', 'aaa', sysdate); 
+	insert into mb_request values(request_qno_seq.nextval, 'ETC', '문의드립니다', 'guest', '010189807582', 'aaa@naver.com', 'aaa', sysdate);
+	
+// BOARD PART ======================================================================================
+// Create Table ============================================
+	create table mb_reviewboard(
+		num number(4) not null,
+		title varchar2(50) not null,
+		contents varchar2(4000),
+		writer varchar2(50) not null,
+		wdate date,
+		count number(3),
+		reco number(3),
+		pwd varchar2(10) not null, 
+		category varchar2(20), 
+		rate number(1)
+	);
+
+	alter table mb_reviewboard add constraint num_pk primary key(num);
+
+	create table mb_cmtreply(
+		conum number(4) not null,
+		cowriter varchar2(30) not null,
+		codate varchar2(30),
+		cmt varchar2(100),
+		num number(4)
+	);
+
+	alter table mb_cmtreply add constraint conum_pk primary key(conum);
+	alter table mb_cmtreply add constraint num_fk foreign key(num) references mb_reviewboard(num) on delete cascade;
+// Create Sequence ===============================
+	create sequence review_seq start with 1 increment by 1;
+	create sequence co_seq start with 1 increment by 1;

@@ -1,0 +1,132 @@
+/* top */
+    #logo {
+		background:#000000;
+		position:fixed;
+		padding-top:5px;
+		top:0; left:0; right:0;
+		z-index: 35;
+		height:110px;
+    }
+    /*960px 중간으로 맞춰줌*/
+    .center {
+		width:960px;
+		margin:0 auto;
+		position:relative;
+    } 
+    .center2 {
+		width:960px;
+		margin:0 auto;
+		padding-top: 10px;
+		border-top:1px solid #FFF;
+    } 
+    .center2>ul>li {
+		float: left;
+    }
+    .center2F {
+    	padding-bottom: 50px;
+		margin: 10px;
+    }    
+    .logo_title {
+        text-align: center;
+    }
+    .logo_title img {
+        width:180px;
+    }
+    .loginform{
+    	margin-top:15px;
+    	margin-left:10px;
+    	position:absolute;
+    	top:30px;
+    	right:0;
+    }
+    .logintext{
+    	color:#FFF;
+    	font-size:0.8em;
+    }
+    
+/* mainmenu */
+	#main_header{
+		background:#191919;
+		position:fixed;
+		top:110px; left:0; right:0;
+		line-height:20px;
+		z-index: 30;
+		border-top:1px solid #FFF;
+		border-bottom:1px solid #FFF;
+    }
+    #main_header a{
+        display:block;
+        padding:5px 20px;
+        color:white;
+    }
+    #main_menu>ul>li{
+        text-align:center;
+        float:left;         
+    }
+    #main_menu>ul>li>a:hover {
+        background-color: #DDD;
+        color:black;
+    }
+    #login_menu>ul>li{
+        float:right;
+    }
+    #login_menu>ul>li>a{
+        background-color:#DDD;
+        color:black;   
+    }
+    #login_menu>ul>li>a:hover {
+        background-color: #6e6464;
+        color:white;
+    }
+    #slide{
+	    padding-top:160px;
+	    padding-bottom:35px;
+	    margin:0 auto;
+	    width:960px;
+	    border-bottom:1px solid #cccccc;
+	}
+/* bottom */    
+	#bottom {
+        /*배경 지정*/
+        height: 35px;
+        background:#000000;
+        /*자손위치 지정*/
+        position:fixed;
+        bottom:0; left:0; right:0;
+		border-top:1px solid #FFF;
+		z-index: 10;
+        color:#808080;
+        font-size:0.8em;
+        letter-spacing:2px;
+    }
+ 	#adress>ul>li {
+        float:left;
+        padding-right:20px;
+        line-height:35px;
+    }
+    #link>ul>li {
+        float:right;
+        padding-right:10px;
+        margin-top:5px;
+    }
+    
+/*tap*/
+	.maintap{
+		width: 400px;
+	}
+	.tabtable{
+		font-size: 0.9em;
+		padding: 10px;
+	}
+	.tabttd1{
+		padding:5px;
+		width: 100px;
+		text-align: left;
+		float: left;	
+	}
+	.tabttd2{
+		padding:5px;
+		width: 260px;
+		text-align: left;
+		text-overflow:ellipsis; overflow:hidden; white-space:nowrap;
+	}

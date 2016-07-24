@@ -1,0 +1,128 @@
+	
+	/* mjhotel form */
+	#mjhotel_center {
+        padding-top:110px;
+        margin:0 auto;
+        width:960px; 
+    }
+    #mjhotel_title{
+    	background:#6e6464;
+    	width:960px; 
+    	height:100px;
+    	line-height:100px;
+    }
+    .mjhotel_titleB {
+		margin-left:50px;
+        float:left;
+        color:#FFF;
+    }
+    #wrap {
+  		position: relative;
+  	}
+    #mjhotle_left{	
+        background:#DDD;
+  		position: absolute;
+  		width: 150px;
+        line-height:40px;
+  		min-height: 100%;
+  		font-weight: bold;
+    }
+    #mjhotle_left>ul{
+    	padding-top:20px;
+    }        
+    #mjhotle_left>ul>li{
+    	padding-left:20px; 
+    }
+    #mjhotle_left>ul>li>a{
+    	color:#808080;
+    }
+    #mjhotle_left>ul>li>a:hover{
+    	color:black;
+    }
+    #mjhotel_section{
+    	background:#FFF;
+  		padding-left: 150px;
+  		padding-bottom: 100px;
+  		width: 810px;
+    }
+    
+    /* mjhotel innerform */
+    #mjhotelF{
+		background-repeat:no-repeat;
+		height:230px;
+	   	width:770px;   	
+	   	padding:20px;
+	   	color:#FFF;
+	   	line-height:400px;
+		font-size:2em;
+	}
+	#mjhotelF2{
+		background:#d0bebc;
+		line-height:25px;
+	   	width:750px; 	
+	   	padding:30px;
+	}
+	#mjhotelF3{
+		padding:30px;
+		line-height:20px;
+	}
+	.mjhotelB{
+		font-weight: bold;
+		font-family: Arial;
+		color:black;
+		font-size:1.2em;
+	}
+	.mjhotelS{
+		font-size:0.8em;
+		line-height:25px;
+	}
+	
+	/* mjhotel Findhotel */
+	#mjhotelF_tab{
+		padding:30px;
+	}
+	#mjhotelF_tab img{
+		float:left;
+		width:300px;
+		height:150px;
+		padding-right:20px;
+	}
+	#mjhotelF2_tab{
+		padding-top: 20px;
+		line-height: 30px;
+	}
+	.mjhotelB_tab{
+		font-weight: bold;
+		font-family: Arial;
+		color:black;
+		font-size:1em;
+	}
+	.mjhotelS_tab{
+		font-family: Arial;
+		color:#AAA;
+		font-size:0.8em;
+	}
+	#mjhotel_table{
+		width: 770px;
+		margin: 0 auto;
+	}
+	#mjhotel_table img{
+		width: 150px; 
+		height:225px;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	.mjhotel_table_td{
+		width: 100px; 
+		text-align:center;
+		vertical-align: middle;
+	}
+	.mjhotel_table_td2{
+		width: 300px; 
+		vertical-align: middle;
+	}
+	.cal{
+		font-weight: bold;
+		color:#242c41;
+		font-size: 1.3em;
+	}

@@ -1,0 +1,316 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* roomlist form */
+.topIntro_mb {
+	width: 800px;
+	margin-left: 110px;
+	padding-top: 30px;
+	height: 111px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+.conTitle {
+	height: 19px;
+	margin-top: 20px;
+	margin-left: 120px;
+	
+}
+
+/* Standard form */
+.basicBox{
+	border-bottom: 1px solid #e8e4de;
+	margin: 25px;
+	margin-left: 30px;
+	overflow: hidden;
+}
+
+.basicBox .Box{
+	float: left;
+	margin-right: 30px;
+	width: 200px;
+	margin-bottom: 40px;
+}
+
+.basicBox .Box .imgArea{
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.basicBox .Box .imgArea img{
+	vertical-align: top;
+}
+
+.basicBox .Box .expArea .topExp{
+	float: left;
+	margin-left: 30px;
+	
+}
+
+.basicBox .Box .expArea .topExp img{
+	vertical-align: top;
+}
+
+.hidden{
+	overflow: hidden;
+	position: relative;
+}
+
+.basicBox .Box .expArea .btnSet{
+	float: right;
+	width: 170px;
+	position: relative;
+	text-align: right;
+}
+
+.btnSet{
+	heigth: 44px;
+}
+
+#room_center {
+	padding-top: 110px;
+	margin: 0 auto;
+	width: 960px;
+}
+
+#room_title {
+	background: #6e6464;
+	width: 960px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.room_titleB {
+	margin-left: 50px;
+	float: left;
+	color: #FFF;
+}
+
+#wrap {
+	position: relative;
+}
+
+#room_left {
+	background: #DDD;
+	position: absolute;
+	width: 150px;
+	line-height: 40px;
+	min-height: 100%;
+	font-weight: bold;
+}
+
+#room_left>ul {
+	padding-top: 20px;
+}
+
+#room_left>ul>li {
+	padding-left: 20px;
+}
+
+#room_left>ul>li>a {
+	color: #808080;
+}
+
+#room_left>ul>li>a:hover {
+	color: black;
+}
+
+#room_section {
+	background: #FFF;
+	padding-left: 150px;
+	padding-bottom: 100px;
+	width: 810px;
+}
+
+/* room innerform */
+#roomF {
+	width: 740px;
+	margin-left: 30px;
+	padding-top: 30px;
+}
+
+#room_title2 {
+	font-weight: bold;
+	color: #6e6464;
+	font-size: 2em;
+	padding-bottom: 20px;
+}
+
+#largeImg {
+	width: 740px;
+	border: solid 5px #ccc;
+}
+
+#largeImg img {
+	width: 740px;
+	height: 490px;
+}
+
+#largeImgB {
+	width: 400px;
+	padding-left: 120px;
+	padding-top : 15px;
+	padding-bottom: 10px;
+	
+}
+
+#largeImgB img {
+	width: 580px;
+	height: auto;
+}
+
+.thumbs {
+	margin-top: 20px;
+}
+
+.thumbs a {
+	margin-right: 20px;
+}
+
+.thumbs img {
+	border: solid 5px #ccc;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: 140px;
+	height: 80px;
+}
+
+.thumbs img:hover {
+	border-color: #0099FF;
+}
+
+.roomS {
+	line-height: 25px;
+	padding: 7px;
+}
+
+.roomB {
+	font-weight: bold;
+	color: #6e6464;
+	font-size: 1.2em;
+}
+
+.bts{
+	padding-left: 515px;
+	padding-bottom: 30px;	
+}
+
+.ClassName {
+	font-weight:bold;
+	text-decoration:none;
+	font-family:Arial;
+	box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 4px 6px;
+	o-box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 4px 6px;
+	-moz-box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 4px 6px;
+	-webkit-box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 4px 6px;
+	background:#787878;
+	background:-o-linear-gradient(90deg, #787878, #454545);
+	background:-moz-linear-gradient( center top, #787878 5%, #454545 100% );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #787878), color-stop(1, #454545) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#787878', endColorstr='#454545');
+	background:-webkit-linear-gradient(#787878, #454545);
+	background:-ms-linear-gradient(#787878, #454545);
+	background:linear-gradient(#787878, #454545);
+	text-indent:0px;
+	line-height:0px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+	font-size:12px;
+	color:#f7f7f7;
+	width:63px;
+	height:0px;
+	padding:13px;
+	border-color:#2e2e2e;
+	border-width:1px;
+	border-style:solid;
+}
+
+.ClassName:active {
+	box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 0 6px;
+	o-box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 0 6px;
+	-moz-box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 0 6px;
+	-webkit-box-shadow:inset #595959 0px 5px 8px -1px,#a6a6a6 0px 0 6px;
+	position:relative;
+	top:4px
+}
+
+.ClassName:hover {
+	background:#454545;
+	background:-o-linear-gradient(90deg, #454545, #787878);
+	background:-moz-linear-gradient( center top, #454545 5%, #787878 100% );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #454545), color-stop(1, #787878) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#787878');
+	background:-webkit-linear-gradient(#454545, #787878);
+	background:-ms-linear-gradient(#454545, #787878);
+	background:linear-gradient(#454545, #787878);
+}
+
+.font-Title{ /* roomlist 제목 */
+	padding-top: 20px;
+	padding-left:120px; 
+	font-size:170%; 
+	font-family: 'Nanum Myeongjo', serif; 
+	color:#9C5B36;
+	font-weight: bold;
+}
+
+.font-Title2{/* 룸 타입 제목 */
+	padding-top: 20px;
+	padding-left: 45px; 
+	padding-bottom : 10px;
+	font-size:170%; 
+	font-family: 'Nanum Myeongjo', serif; 
+	color:#9C5B36;
+	font-weight: bold;
+}
+
+.font-Main1{ /* 룸 타입 메인 폰트 */
+	font-size:120%; 
+	font-family: 'Nanum Myeongjo', serif; 
+	color:#4C4C4C;
+	font-weight: bold;
+	padding-left: 45px;
+	padding-bottom : 20px; 
+}
+
+.font-Main2{ /* 룸 타입 메인 폰트 */
+	font-size:100%; 
+	font-family: 'Nanum Gothic', sans-serif;
+	color:#4C4C4C;
+	padding-left: 45px;
+	padding-bottom : 20px; 
+	line-height: 20px;
+}
+
+.font-Main3{ /* 룸 타입 메인 폰트 - 어매니티 */
+	font-size:80%; 
+	font-family: 'Nanum Gothic', sans-serif;
+	color:#4C4C4C;
+	padding-left: 45px;
+	padding-bottom : 20px; 
+	line-height: 20px;
+	width: 800px;
+	height: 150px;
+	
+}
+
+.font-Main3 table{ /* 룸 타입 메인 폰트 - 어매니티 */
+	width: 700px;
+	height: 120px;
+	
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+
+#container {
+	width: 810px;
+	height: 498px;
+	margin: 0 auto;
+	background-image: url(../images/fitness/interface/back_noise.png)
+}
+
+#container .mainframe {
+	width: 500px;
+	height: 498px;
+	float: left;
+}
+
+#container .thumbnails {
+	float: left;
+	width: 293px;
+	height: 498px;
+	padding-left:10px;
+	padding-top:30px;
+	background-repeat: no-repeat;
+}
+
+.thumbnailimage {
+	float: left;
+	padding: 10px;
+}
+
+.large_thumb {
+	float: left;
+	position:absolute;
+	width: 64px;
+	height: 64px;
+	padding: 0px 10px 0px 0;
+}
+
+img.large_thumb_image {
+	position: absolute;
+	left: 5px;
+	top: 4px;
+}
+
+.large_thumb_border {
+	width: 64px;
+	height: 64px;
+	background: url('../images/fitness/interface/thumb_border.png');
+}
+
+.thumb_container {
+	width: 64px;
+	height: 64px;
+	background-image: url('../images/fitness/interface/thumb_holder.png');
+}
+
+#largephoto {
+	width: 444px;
+	height: 370px;
+	background-color: #333333;
+	margin-top: 15px;
+	margin-left: 40px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#largetrans {
+	width: 444px;
+	height: 370px;
+	background-image: url('../images/fitness/interface/main_bg_trans.png');
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.large_image {
+	display: none
+}
+
+#containertitle {
+	padding-top: 40px;
+	margin-left: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-shadow: 0px 1px 2px #fff;
+}
+

@@ -1,0 +1,83 @@
+	
+	#login_center {
+		width:400px;
+		margin: 0 auto;
+		background:#EEE;
+		background-position: center;
+		height: 100%;
+    }
+	
+    #login_title{
+    	padding:20px;
+    	font-weight:bold;
+    	text-align:center;
+    	color:#6e6464;
+    	font-size: 4em;
+    	font-family: Times New Roman;
+    }
+    #login_bottom{
+    	text-align: center;
+    }
+    
+    #login_tableF{
+    	width:400px;
+		margin:0 auto;
+		border: 1px solid #DDD;
+		padding:10px;
+		background: #FFF;
+		color:#AAA;
+		font-size:0.8em;
+    }
+    #loginF {
+    	padding-top:200px;
+		width:400px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 50px;
+    }
+    #hr{
+    	width:360px;
+		border-bottom: 1px solid #CCC;
+		margin-top: 10px;
+		margin-bottom: 10px;
+    }
+    .ta{
+    	width:260px;
+    	padding:5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-style: none;
+    }
+    .ta2{
+		margin-top: 5px;
+		padding-left:5px;
+		color:red;
+    }
+    .ta3{
+		color:blue;
+    }
+    .ta4{
+		width:240px;
+    	padding:5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-style: none;
+    }
+    .bt{
+		padding:5px;
+		text-align: right;
+    }
+    .bt2{ 
+		width:150px; 
+		padding:10px;
+		background:#6e6464;
+		color:#FFF;
+		letter-spacing:5px;
+    }
+    .bt3{ 
+		width:200px; 
+		padding:10px;
+		background:#6e6464;
+		color:#FFF;
+		letter-spacing:5px;
+    }

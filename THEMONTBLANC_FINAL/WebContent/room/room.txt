@@ -1,0 +1,3 @@
+main 폴더 css에서 mainMenu z-index 30으로 조정
+
+room에 css z-index 25로 조정

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>montblanc</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- MEMBER PART -->
+	<!-- MEMBER LOG-IN -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>mont.blanc.mvc.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login.json</url-pattern>
+	</servlet-mapping>
+
+	<!-- MEMBER JOIN -->
+	<servlet>
+		<servlet-name>Join</servlet-name>
+		<servlet-class>mont.blanc.mvc.JoinController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Join</servlet-name>
+		<url-pattern>/login/join.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- MEMBER ID CHECK -->
+	<servlet>
+		<servlet-name>IDCheck</servlet-name>
+		<servlet-class>mont.blanc.mvc.SearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IDCheck</servlet-name>
+		<url-pattern>/login/search.json</url-pattern>
+	</servlet-mapping>
+
+	<!-- MEMBER MY INFORMATION -->
+	<servlet>
+		<servlet-name>MemberInfo</servlet-name>
+		<servlet-class>mont.blanc.mvc.InfoController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemberInfo</servlet-name>
+		<url-pattern>/info.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- MEMBER MY INFORMATION MODIFY-->
+	<servlet>
+		<servlet-name>MemberInfoModify</servlet-name>
+		<servlet-class>mont.blanc.mvc.ModifyController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemberInfoModify</servlet-name>
+		<url-pattern>/modify.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- MEMBER MY INFORMATION WITHDRAWAL -->
+	<servlet>
+		<servlet-name>MemberWithdrawal</servlet-name>
+		<servlet-class>mont.blanc.mvc.DeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemberWithdrawal</servlet-name>
+		<url-pattern>/login/delete.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- MEMBER ADMIN MEMBER LIST -->
+	<servlet>
+		<servlet-name>Member</servlet-name>
+		<servlet-class>mont.blanc.mvc.ListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Member</servlet-name>
+		<url-pattern>/member.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- RESERVATION PART -->
+	<!-- RESERVATION STEP1 FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>Reservation</servlet-name>
+		<servlet-class>mont.blanc.mvc.revStep1Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Reservation</servlet-name>
+		<url-pattern>/revStep1.do</url-pattern>
+	</servlet-mapping> 
+  
+	<!-- RESERVATION STEP2 FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>revStep2Controller</servlet-name>
+		<servlet-class>mont.blanc.mvc.revStep2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>revStep2Controller</servlet-name>
+		<url-pattern>/revStep2.do</url-pattern>
+	</servlet-mapping> 
+ 
+  <!-- RESERVATION STEP3 FOR CUSTOMER -->
+	<servlet>
+	    <servlet-name>revStep3Controller</servlet-name>
+	    <servlet-class>mont.blanc.mvc.revStep3Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>revStep3Controller</servlet-name>
+	    <url-pattern>/revStep3.do</url-pattern>
+	</servlet-mapping> 
+  
+  <!-- RESERVATION CANCEL FOR CUSTOMER -->
+  	<servlet>
+	    <servlet-name>revStep4Controller</servlet-name>
+	    <servlet-class>mont.blanc.mvc.revStep4Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>revStep4Controller</servlet-name>
+	    <url-pattern>/revStep4.do</url-pattern>
+	</servlet-mapping> 
+  
+  <!-- RESERVATION CALENDAR FOR CUSTOMER -->
+	<servlet>
+	    <servlet-name>Reservation_Cal</servlet-name>
+	    <servlet-class>mont.blanc.mvc.revCalController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>Reservation_Cal</servlet-name>
+	    <url-pattern>/revCal.do</url-pattern>
+	</servlet-mapping> 
+  
+    <!-- RESERVATION BOARD FOR CUSTOMER -->
+	<servlet>
+	    <servlet-name>Reservation_Board</servlet-name>
+	    <servlet-class>mont.blanc.mvc.revBoardController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>Reservation_Board</servlet-name>
+	    <url-pattern>/revBoard.do</url-pattern>
+	</servlet-mapping> 
+ 
+	<!-- RESERVATION CANCEL FOR ADMIN -->
+	<servlet>
+	    <servlet-name>Reservation_BoardDelete</servlet-name>
+	    <servlet-class>mont.blanc.mvc.revDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>Reservation_BoardDelete</servlet-name>
+	    <url-pattern>/revDelete.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- NOTICE PART  -->
+	<!-- NOTICE FOR CUSTOMER  -->
+	<servlet>
+	  	<servlet-name>G_Notice</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_G_ListController</servlet-class>
+ 	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>G_Notice</servlet-name>
+	  	<url-pattern>/G_notice.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE DETAIL FOR CUSTOMER  -->
+	<servlet>
+	  	<servlet-name>G_NoticeDetail</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_G_DetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>G_NoticeDetail</servlet-name>
+	  	<url-pattern>/G_noticeDetail.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE LIST  -->
+	<servlet>
+	  	<servlet-name>Notice</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_ListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>Notice</servlet-name>
+	  	<url-pattern>/notice.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE LIST IN INDEX PAGE  -->
+	<servlet>
+	  	<servlet-name>MainNotice</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.MainListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>MainNotice</servlet-name>
+	  	<url-pattern>/mainNotice.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE INSERT FOR ADMIN  -->
+	<servlet>
+	  	<servlet-name>NoticeInsert</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_InsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>NoticeInsert</servlet-name>
+	  	<url-pattern>/noticeInsert.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE DETAIL FOR ADMIN  -->
+	<servlet>
+	  	<servlet-name>NoticeDetail</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_DetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>NoticeDetail</servlet-name>
+	  	<url-pattern>/noticeDetail.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE MODIFY FOR ADMIN  -->
+	<servlet>
+	  	<servlet-name>NoticeEdit</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_EditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>NoticeEdit</servlet-name>
+	  	<url-pattern>/noticeEdit.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE PRE_MODIFY FOR ADMIN  -->
+	<servlet>
+	  	<servlet-name>NoticeEditPre</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_EditPreController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>NoticeEditPre</servlet-name>
+	  	<url-pattern>/noticeEditPre.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- NOTICE DELETE FOR ADMIN  -->
+	<servlet>
+	  	<servlet-name>NoticeDelete</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.notice_DeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>NoticeDelete</servlet-name>
+	  	<url-pattern>/noticeDelete.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- EVENT PART -->
+	<servlet>
+	    <servlet-name>Event</servlet-name>
+	    <servlet-class>mont.blanc.mvc.mb_EventController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>Event</servlet-name>
+	    <url-pattern>/mb_event.do</url-pattern>
+	</servlet-mapping>
+  
+  <!-- EVENT INSERT -->
+	<servlet>
+	    <servlet-name>EventInsert</servlet-name>
+	    <servlet-class>mont.blanc.mvc.mb_EventInsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>EventInsert</servlet-name>
+	    <url-pattern>/mb_eventInsert.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- EVENT PRE-MODIFY -->
+	<servlet>
+	  	<servlet-name>EventPreModify</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.mb_EventPreModifyController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>EventPreModify</servlet-name>
+	  	<url-pattern>/mb_eventPreModify.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- EVENT MODIFY -->
+	<servlet>
+	  	<servlet-name>EventModify</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.mb_EventModifyController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>EventModify</servlet-name>
+	  	<url-pattern>/mb_eventModify.do</url-pattern>
+	</servlet-mapping>
+  
+	<!-- EVENT DELETE -->
+	<servlet>
+	  	<servlet-name>EventDelete</servlet-name>
+	  	<servlet-class>mont.blanc.mvc.mb_EventDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  	<servlet-name>EventDelete</servlet-name>
+	  	<url-pattern>/mb_eventDelete.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- BOARD PART -->  
+	<!-- BOARD LIST FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_Guest</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_ListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_Guest</servlet-name>
+		<url-pattern>/G_guest.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD PRE-INSERT FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_guestPreInsert</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_PreInsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_guestPreInsert</servlet-name>
+		<url-pattern>/G_guestPreInsert.do</url-pattern>
+	</servlet-mapping>  
+	
+	<!-- BOARD INSERT FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_GuestInsert</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_InsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_GuestInsert</servlet-name>
+		<url-pattern>/G_guestInsert.do</url-pattern>
+	</servlet-mapping>
+	  
+	<!-- BOARD DETAIL FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_GuestDetail</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_DetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_GuestDetail</servlet-name>
+		<url-pattern>/G_guestDetail.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD PRE-MODIFY FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_EditPre</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_EditPreController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_EditPre</servlet-name>
+		<url-pattern>/G_guestPreEdit.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD MODIFY FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_GuestEdit</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_EditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_GuestEdit</servlet-name>
+		<url-pattern>/G_guestEdit.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD DELETE FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_GuestDelete</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_DeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_GuestDelete</servlet-name>
+		<url-pattern>/G_guestDelete.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD COMMENT PRE-INSERT FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_CoPreinsert</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_coPreinsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_CoPreinsert</servlet-name>
+		<url-pattern>/coPreinsert.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD COMMENT INSERT FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_GuestCoInsert</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_coInsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_GuestCoInsert</servlet-name>
+		<url-pattern>/G_guestCoInsert.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD COMMENT DELETE FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_GuestCoDelete</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_coDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_GuestCoDelete</servlet-name>
+		<url-pattern>/G_guestCoDelete.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD LIST FOR ADMIN -->
+	<servlet>
+		<servlet-name>G_AdminGuest</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_AdminListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_AdminGuest</servlet-name>
+		<url-pattern>/G_Adminguest.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD DETAIL FOR ADMIN -->
+	<servlet>
+		<servlet-name>G_AdminDetailGuest</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_AdminDetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_AdminDetailGuest</servlet-name>
+		<url-pattern>/G_AdminDetailguest.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- BOARD DELETE FOR ADMIN -->
+	<servlet>
+		<servlet-name>G_AdminDeleteGuest</servlet-name>
+		<servlet-class>mont.blanc.mvc.G_AdminDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_AdminDeleteGuest</servlet-name>
+		<url-pattern>/G_AdminDeleteguest.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- REQUEST PART -->
+	<!-- REQUEST INSERT FOR CUSTOMER -->
+	<servlet>
+		<servlet-name>G_RequestInsert</servlet-name>
+		<servlet-class>mont.blanc.mvc.MB_Faq_Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>G_RequestInsert</servlet-name>
+		<url-pattern>/G_requestInsert.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- REQUEST LIST FOR ADMIN -->
+	<servlet>
+		<servlet-name>Request</servlet-name>
+		<servlet-class>mont.blanc.mvc.MB_Faq_ListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Request</servlet-name>
+		<url-pattern>/request.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- REQUEST DETAIL FOR ADMIN -->
+	<servlet>
+		<servlet-name>RequestDetail</servlet-name>
+		<servlet-class>mont.blanc.mvc.MB_Faq_DetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestDetail</servlet-name>
+		<url-pattern>/requestDetail.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- REQUEST DELETE FOR ADMIN -->
+	<servlet>
+		<servlet-name>RequestDelete</servlet-name>
+		<servlet-class>mont.blanc.mvc.MB_Faq_DeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestDelete</servlet-name>
+		<url-pattern>/requestDelete.do</url-pattern>
+	</servlet-mapping>
+</web-app>

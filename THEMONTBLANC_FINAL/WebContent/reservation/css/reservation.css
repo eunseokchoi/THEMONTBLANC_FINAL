@@ -1,0 +1,200 @@
+/* reservation form */
+
+#re_center {
+	padding-top:110px;
+	margin:0 auto;
+	width:960px; 
+}
+
+#re_title{
+	background:#6e6464;
+	width:960px; 
+	height:100px;
+	line-height:100px;
+}
+/* 주말색상변경 */
+ .ui-datepicker-week-end:first-child, .ui-datepicker-week-end:first-child a {color:red}
+ .ui-datepicker-week-end:last-child, .ui-datepicker-week-end:last-child a {color:blue}
+
+.re_titleB {
+	margin-left:50px;
+	float:left;
+	color:#FFF;
+}
+#wrap {
+	position: relative;
+}
+#re_left{	
+	background:#DDD;
+	position: absolute;
+	width: 150px;
+	line-height:40px;
+	min-height: 100%;
+	font-weight: bold;
+}
+#re_left>ul{
+	padding-top:20px;
+}        
+#re_left>ul>li{
+	padding-left:20px; 
+}
+#re_left>ul>li>a{
+	color:#808080;
+}
+#re_left>ul>li>a:hover{
+	color:black;
+}
+#re_section{
+	background:#FFF;
+	padding-left: 150px;
+	padding-bottom: 100px;
+	width: 810px;
+}
+  
+/* reservation innerform */
+#reF{
+	padding:20px;
+	width:770px;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom:500px;
+}
+#reF a{
+	color:#6e6464;
+}
+#reF a:hover{
+	color:#ff6600;
+}
+#reF2{
+	text-align: left;
+	padding-bottom:30px;
+}
+#re_title2{
+	font-weight: bold;
+	color:#6e6464;
+	font-size:2em;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align: left;
+	border-bottom: 1px solid #BBB;
+}
+#re_tableF{
+	width:770px;
+	text-align: center;
+	border-bottom: 1px solid #BBB;
+}
+.re_tableF_td{
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left:25px;
+}
+/*step1 방선택*/
+#re_tableF2{
+	text-align:left;
+	width:770px;
+	font-weight:bold;
+	font-size:1em;
+	color:#6e6464;
+	padding: 20px;
+}
+.re_tableF2_li{
+	padding-left: 10px;
+}
+.re_tableF2_td{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*step1 방정보*/
+#re_tableF3{
+	text-align:left;
+	width:770px;
+	font-weight:bold;
+	font-size:1em;
+	color:#6e6464;
+}
+.re_tableF3_td1{
+	text-align:center;
+	vertical-align:middle;
+	padding-left: 30px;
+}
+.re_tableF3_td2{
+	padding-top: 20px;
+
+}
+#re_tableF3 img{
+	width:400px;
+	height:280px; 
+	padding-left: 10px;
+}
+/*step2 최종 정보확인*/
+#re_tableF4{
+	text-align:center;
+	padding:30px;
+	height:400px;
+	width:500px;
+	margin:0 auto;
+	font-weight:bold;
+	color:#6e6464;
+	
+	
+}
+.re_tableF4_td1{
+	width: 100px;
+	text-align: left;
+	padding: 5px;
+	text-align:center;
+	
+
+}
+/*예약 확인*/
+#re_tableF5{
+	padding:30px;
+	text-align:center;
+	width:770px;
+	margin:0 auto;
+	color:#6e6464;
+	font-size: 0.8em;
+	border-bottom: 1px solid #BBB;
+}
+.re_tableB{
+	color:#FFF;
+	background: #6e6464;
+}
+.bt{
+	padding:5px;
+	margin:3px;
+}
+.bt2{
+	width:140px;
+	padding:5px;
+	margin:3px;
+	font-weight: bold;
+}
+.ta{
+	width:250px;
+	padding:5px;
+	margin:3px;
+}
+.ta2{
+	width:200px;
+	padding:5px;
+	margin:3px;
+}
+.ta3{
+	width:50px;
+	padding:5px;
+	margin:3px;
+}
+.ta4{
+	margin:30px;
+	color: red;
+}
+.ta5{
+	padding:30px;
+}
+.img1{
+	width:250px;
+	padding:5px;
+	margin:3px;
+}

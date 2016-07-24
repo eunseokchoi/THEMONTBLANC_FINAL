@@ -1,0 +1,21 @@
+#link>ul>li>a.facebook {
+	display:block; 
+	width:25px;
+	height:25px;
+	background:url(../images/facebook_off.png) no-repeat;
+}
+#link>ul>li>a:hover.facebook {
+  	background:url(../images/facebook_on.png) no-repeat;
+}
+#link>ul>li>a.twitter {
+ 	display:block; 
+	width:25px;
+	height:25px;
+	background:url(../images/twitter_off.png) no-repeat;
+}
+#link>ul>li>a:hover.twitter {
+   	background:url(../images/twitter_on.png) no-repeat;
+}
+#link>ul>li>a span {
+   	display:none;
+} 
